@@ -1,0 +1,60 @@
+
+alex@DESKTOP-N3FDLQ6 MINGW64 /d/Documents/LearningGIT/Projects/fuzzy-pancake (master)
+$ git log --all --abbrev --decorate --date-order --oneline --graph
+* 5e5a9f0 (HEAD -> master, origin/master, origin/HEAD) Initial commit
+
+# Created and Commmitted a new car project. #
+
+alex@DESKTOP-N3FDLQ6 MINGW64 /d/Documents/LearningGIT/Projects/fuzzy-pancake (master)
+$ git log --all --abbrev --decorate --date-order --oneline --graph
+* e6eafb5 (HEAD -> master) New project Car.
+* 5e5a9f0 (origin/master, origin/HEAD) Initial commit
+
+
+alex@DESKTOP-N3FDLQ6 MINGW64 /d/Documents/LearningGIT/Projects/fuzzy-pancake (master)
+$ git push
+Counting objects: 21, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (21/21), 6.13 KiB | 1.02 MiB/s, done.
+Total 21 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/hedonicalex/fuzzy-pancake.git
+   5e5a9f0..e6eafb5  master -> master
+
+alex@DESKTOP-N3FDLQ6 MINGW64 /d/Documents/LearningGIT/Projects/fuzzy-pancake (master)
+$ git log --all --abbrev --decorate --date-order --oneline --graph
+* e6eafb5 (HEAD -> master, origin/master, origin/HEAD) New project Car.
+* 5e5a9f0 Initial commit
+
+# New File added on GitHubWeb #
+
+alex@DESKTOP-N3FDLQ6 MINGW64 /d/Documents/LearningGIT/Projects/fuzzy-pancake (master)
+$ git fetch
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/hedonicalex/fuzzy-pancake
+   e6eafb5..60d622d  master     -> origin/master
+
+alex@DESKTOP-N3FDLQ6 MINGW64 /d/Documents/LearningGIT/Projects/fuzzy-pancake (master)
+$ git log --all --abbrev --decorate --date-order --oneline --graph
+* 60d622d (origin/master, origin/HEAD) NewFileAddedToGitHutWeb
+* e6eafb5 (HEAD -> master) New project Car.
+* 5e5a9f0 Initial commit
+
+alex@DESKTOP-N3FDLQ6 MINGW64 /d/Documents/LearningGIT/Projects/fuzzy-pancake (master)
+$ git merge
+Updating e6eafb5..60d622d
+Fast-forward
+ Test_upload.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Test_upload.txt
+
+alex@DESKTOP-N3FDLQ6 MINGW64 /d/Documents/LearningGIT/Projects/fuzzy-pancake (master)
+$ git log --all --abbrev --decorate --date-order --oneline --graph
+* 60d622d (HEAD -> master, origin/master, origin/HEAD) NewFileAddedToGitHutWeb
+* e6eafb5 New project Car.
+* 5e5a9f0 Initial commit
+
